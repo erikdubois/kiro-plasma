@@ -37,6 +37,7 @@ install_tier1() {
         brave-bin \
         vivaldi \
         vivaldi-ffmpeg-codecs \
+        opera \
         ark \
         gwenview \
         okular \
@@ -50,6 +51,8 @@ install_tier1() {
         krita \
         kdenlive \
         obs-studio \
+        flameshot-git \
+        anydesk-bin \
         claude-code \
         sublime-text-4 \
         visual-studio-code-bin \
