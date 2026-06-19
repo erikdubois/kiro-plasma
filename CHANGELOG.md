@@ -2,6 +2,23 @@
 
 ## 2026.06.19
 
+### Override-shortcuts script (close window + 7 F-key app launches)
+- Renamed `apply-close-window-shortcut.sh` → **`apply-override-shortcuts.sh`** and
+  broadened it: it now applies all Kiro keybindings that must override a built-in
+  KWin action (which the add-only `kiro-plasma-keybindings` package cannot do).
+- Keeps `Super+Shift+Q` → KWin "Close Window" (`Alt+F4` retained).
+- Adds the 7 `Super+F#` app launches that collide with Plasma defaults: VS Code
+  (F2), Inkscape (F3), GIMP (F4), Meld (F5), VLC (F6), VirtualBox (F7),
+  virt-manager (F9). For each it frees the conflicting key from the KWin action
+  (read-modify-write that strips only that token, preserving KDE's default and
+  friendly-name fields) and binds the key via a `[services][<id>] _launch` entry.
+- Only binds apps that are actually installed (resolves the real `.desktop` id
+  from candidate names across `/usr/share`, `~/.local/share`, and flatpak dirs),
+  so uninstalled apps leave the Plasma default intact — no dead keys.
+- Verified on a Plasma 6 VM: close-window applies, uninstalled apps skip cleanly,
+  and (with a stub `code.desktop`) `Meta+F2` is freed from "Switch to Desktop 2"
+  and bound to `[services][code.desktop]`.
+
 ### What Changed
 - Created the initial `kiro-plasma` script suite — a Plasma-only equivalent of
   `arcolinux-nemesis`, for adding extra user apps on top of a minimal Kiro Plasma
