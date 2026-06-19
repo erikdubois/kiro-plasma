@@ -19,7 +19,8 @@ pause_if_debug
 #   - Source-driven list, then filtered to drop X11-only, non-Plasma desktop and
 #     development entries. What remains are user apps (office suites, email
 #     clients, PDF/note tools, scanning) plus a few core KDE apps that the ISO
-#     keeps commented (kate, konsole, okular, kmail).
+#     keeps commented (kate, okular, kmail). konsole is excluded - it is part of
+#     Plasma for us.
 #
 ##################################################################################################################################
 

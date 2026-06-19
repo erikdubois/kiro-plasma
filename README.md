@@ -41,14 +41,15 @@ as is anything X11-only / non-Plasma / development. What remains is bucketed:
 |------|--------|---------|----------|
 | 1 | `100-install-tier1-yes-great.sh` | **yes great** | dolphin, gwenview, spectacle, ark, kdeconnect, yakuake, ktorrent, discover, partitionmanager, spotify, signal-in-tray, zapzap, insync |
 | 2 | `200-install-tier2-maybe.sh` | **maybe** | cryfs, encfs, gocryptfs, kdenetwork-filesharing, lastpass |
-| 3 | `300-install-tier3-unlikely.sh` | **unlikely** | office suites, email clients, PDF/note tools, scanning, kate, konsole, okular, kmail |
+| 3 | `300-install-tier3-unlikely.sh` | **unlikely** | office suites, email clients, PDF/note tools, scanning, kate, okular, kmail |
 | 4 | `400-install-tier4-unplaced.sh` | **could not place** | breeze, kde-gtk-config, ffmpegthumbs, packagekit-qt6, unifetch |
 
 **Tier 3** is special: its list comes from the packages that are **commented out**
 in the kiro-iso packages file (considered for the ISO but not shipped), then
 filtered to drop X11/non-Plasma/dev entries. That is why core KDE apps like
-`kate`, `konsole`, `okular` and `kmail` land in Tier 3 — they are commented in
-the ISO, so by rule they are offered here rather than in Tier 1.
+`kate`, `okular` and `kmail` land in Tier 3 — they are commented in the ISO, so
+by rule they are offered here rather than in Tier 1. (`konsole` is excluded
+entirely — it is part of Plasma for us.)
 
 ### Plasma integration layer
 

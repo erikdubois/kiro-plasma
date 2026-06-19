@@ -20,7 +20,8 @@
 - Tier 3 is sourced specifically from the **commented-out** package lines in the
   kiro-iso packages file (~143 lines, "considered but not shipped"), then filtered
   for Plasma/user relevance. This is why core KDE apps that the ISO keeps commented
-  (kate, konsole, okular, kmail) land in Tier 3 rather than Tier 1.
+  (kate, okular, kmail) land in Tier 3 rather than Tier 1. konsole is excluded
+  entirely — it is treated as part of Plasma.
 - For packages present in both `plasma.sh` and the kiro-iso commented list
   (kate, okular), the Tier 3 commented-source rule wins.
 - `common/common.sh` copied verbatim from arcolinux-nemesis as the shared helper
