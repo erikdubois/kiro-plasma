@@ -31,9 +31,9 @@ install_tier4() {
 
     install_packages \
         ffmpegthumbs \
+        hardcode-fixer-git \
         packagekit-qt6 \
-        python-pywal \
-        hardcode-fixer-git
+        python-pywal
 }
 
 install_tier4

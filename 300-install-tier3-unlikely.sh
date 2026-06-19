@@ -32,43 +32,43 @@ install_tier3() {
 
     install_packages \
         betterbird-bin \
-        claws-mail \
-        kmail \
-        thunderbird \
         cherrytree \
-        obsidian \
-        xournalpp \
-        libreoffice-fresh \
-        onlyoffice-bin \
-        pdfarranger \
-        qpdfview \
-        gscan2pdf \
-        simple-scan \
-        isoimagewriter \
-        shortwave \
-        nomacs \
-        hardinfo2 \
-        system-config-printer \
-        pacmanlogviewer \
+        claws-mail \
         font-manager \
         gcolor3 \
-        resources \
-        qalculate-qt \
+        gscan2pdf \
+        hardinfo2 \
+        isoimagewriter \
         kamoso \
-        neochat \
-        kweather \
-        kclock \
         kcharselect \
-        kfind \
-        upscayl-bin \
+        kclock \
         kdiskmark \
-        pika-backup \
-        vorta \
-        timeshift \
-        skanpage \
+        kfind \
         kmag \
+        kmail \
+        kweather \
+        libreoffice-fresh \
+        neochat \
+        nomacs \
+        obsidian \
         onboard \
-        orca
+        onlyoffice-bin \
+        orca \
+        pacmanlogviewer \
+        pdfarranger \
+        pika-backup \
+        qalculate-qt \
+        qpdfview \
+        resources \
+        shortwave \
+        simple-scan \
+        skanpage \
+        system-config-printer \
+        thunderbird \
+        timeshift \
+        upscayl-bin \
+        vorta \
+        xournalpp
 }
 
 install_tier3

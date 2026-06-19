@@ -32,38 +32,40 @@ install_tier1() {
     log_section "Installing Tier 1 apps (yes great)"
 
     install_packages \
-        firefox \
-        chromium \
+        anydesk-bin \
+        ark \
         brave-bin \
+        chromium \
+        claude-code \
+        dolphin-plugins \
+        filelight \
+        firefox \
+        flameshot-git \
+        gimp \
+        gwenview \
+        inkscape \
+        insync \
+        kcalc \
+        kdenetwork-filesharing \
+        kdenlive \
+        krita \
+        lastpass \
+        mintstick \
+        obs-studio \
+        okular \
+        signal-in-tray \
+        spotify \
+        sublime-text-4 \
+        visual-studio-code-bin \
         vivaldi \
         vivaldi-ffmpeg-codecs \
-        opera \
-        ark \
-        gwenview \
-        okular \
         vlc \
         vlc-plugins-all \
         yakuake \
-        kdenetwork-filesharing \
-        dolphin-plugins \
-        gimp \
-        inkscape \
-        krita \
-        kdenlive \
-        obs-studio \
-        flameshot-git \
-        anydesk-bin \
-        claude-code \
-        sublime-text-4 \
-        visual-studio-code-bin \
-        kcalc \
-        filelight \
-        mintstick \
-        lastpass \
-        insync \
-        signal-in-tray \
-        spotify \
         zapzap
+
+    # opera is AUR-only (not mirrored in chaotic-aur) - install via AUR helper
+    install_aur_package opera
 }
 
 install_tier1

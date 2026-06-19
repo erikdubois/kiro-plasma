@@ -30,25 +30,25 @@ install_tier2() {
     log_section "Installing Tier 2 apps (maybe)"
 
     install_packages \
-        featherpad \
-        geany \
-        kate \
-        qbittorrent \
-        ktorrent \
-        wps-office \
-        variety \
+        audacity \
         cryfs \
-        encfs \
-        keepassxc \
         digikam \
         elisa \
-        haruna \
-        kid3-qt \
-        krename \
-        krdc \
+        encfs \
+        featherpad \
+        geany \
         handbrake \
-        audacity \
-        k3b
+        haruna \
+        k3b \
+        kate \
+        keepassxc \
+        kid3-qt \
+        krdc \
+        krename \
+        ktorrent \
+        qbittorrent \
+        variety \
+        wps-office
 }
 
 install_tier2
