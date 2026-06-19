@@ -16,8 +16,8 @@ pause_if_debug
 #   Purpose:
 #   - Tier 4 "the rest" - allowed on a Plasma box but not a clear user app, so it
 #     could not be confidently placed in Tier 1/2/3.
-#   - Mostly theming/integration glue and a stray fetch tool. Install only if you
-#     specifically want them.
+#   - Mostly theming/integration glue. Install only if you specifically want it.
+#   - None are present in the minimal Kiro Plasma ISO build.
 #
 ##################################################################################################################################
 
@@ -30,10 +30,10 @@ install_tier4() {
     log_section "Installing Tier 4 packages (could not place)"
 
     install_packages \
-        breeze \
         ffmpegthumbs \
-        kde-gtk-config \
-        packagekit-qt6
+        packagekit-qt6 \
+        python-pywal \
+        hardcode-fixer-git
 }
 
 install_tier4

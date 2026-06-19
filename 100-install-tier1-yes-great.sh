@@ -14,9 +14,11 @@ pause_if_debug
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 #   Purpose:
-#   - Tier 1 "yes great" - the user apps you almost certainly want on top of a
-#     minimal Kiro Plasma ISO. Core Plasma applications plus Erik's daily apps.
-#   - Nothing here ships in the kiro-iso packages file (KIB), so it is all extra.
+#   - Tier 1 "yes great" - the user apps you almost certainly want on top of the
+#     minimal Kiro Plasma ISO build (Plasma + ohmychadwm, all apps deselected).
+#   - Exclusion is checked against the real installed package list of that build,
+#     so nothing here is already present. The minimal build ships NO browser and
+#     no image/PDF/media viewer - those gaps are filled here.
 #   - No X11-only tools, no development tooling, no non-Plasma desktop apps.
 #
 ##################################################################################################################################
@@ -30,16 +32,23 @@ install_tier1() {
     log_section "Installing Tier 1 apps (yes great)"
 
     install_packages \
+        firefox \
+        chromium \
+        brave-bin \
+        vivaldi \
+        vivaldi-ffmpeg-codecs \
         ark \
-        discover \
-        dolphin \
-        dolphin-plugins \
         gwenview \
-        kdeconnect \
-        ktorrent \
-        partitionmanager \
-        spectacle \
+        okular \
+        vlc \
+        vlc-plugins-all \
         yakuake \
+        kdenetwork-filesharing \
+        dolphin-plugins \
+        gimp \
+        inkscape \
+        obs-studio \
+        lastpass \
         insync \
         signal-in-tray \
         spotify \

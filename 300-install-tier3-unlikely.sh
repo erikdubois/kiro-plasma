@@ -14,13 +14,11 @@ pause_if_debug
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 #   Purpose:
-#   - Tier 3 "unlikely" - apps that were considered for the ISO but deliberately
-#     left out: they sit COMMENTED in kiro-iso/archiso/packages.x86_64.
-#   - Source-driven list, then filtered to drop X11-only, non-Plasma desktop and
-#     development entries. What remains are user apps (office suites, email
-#     clients, PDF/note tools, scanning) plus a few core KDE apps that the ISO
-#     keeps commented (kate, okular, kmail). konsole is excluded - it is part of
-#     Plasma for us.
+#   - Tier 3 "unlikely" - user apps that are nice to have but most people will not
+#     reach for on a default Plasma box: office suites, email clients, note apps,
+#     extra PDF tools, scanning, plus a handful of Qt/neutral utilities.
+#   - None are present in the minimal Kiro Plasma ISO build. Same rules: no
+#     X11-only, no non-Plasma desktop apps, no development tooling.
 #
 ##################################################################################################################################
 
@@ -34,22 +32,29 @@ install_tier3() {
 
     install_packages \
         betterbird-bin \
-        cherrytree \
         claws-mail \
-        featherpad \
-        gscan2pdf \
-        kate \
         kmail \
-        libreoffice-fresh \
+        thunderbird \
+        cherrytree \
         obsidian \
-        okular \
+        xournalpp \
+        libreoffice-fresh \
         onlyoffice-bin \
+        wps-office \
         pdfarranger \
         qpdfview \
+        gscan2pdf \
         simple-scan \
-        thunderbird \
-        wps-office \
-        xournalpp
+        shortwave \
+        variety \
+        nomacs \
+        mintstick \
+        hardinfo2 \
+        system-config-printer \
+        pacmanlogviewer \
+        font-manager \
+        gcolor3 \
+        resources
 }
 
 install_tier3

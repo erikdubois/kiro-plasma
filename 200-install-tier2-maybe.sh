@@ -15,8 +15,9 @@ pause_if_debug
 #
 #   Purpose:
 #   - Tier 2 "maybe" - useful Plasma user apps you might add depending on taste.
-#   - Encrypted-folder tooling, Samba sharing from Dolphin, a password manager.
-#   - None of these ship in the kiro-iso packages file (KIB).
+#   - Alternative browsers, text/graphics editors, a torrent client, a drop-down
+#     terminal, encrypted-folder tooling and Samba sharing from Dolphin.
+#   - None of these are present in the minimal Kiro Plasma ISO build.
 #
 ##################################################################################################################################
 
@@ -29,11 +30,13 @@ install_tier2() {
     log_section "Installing Tier 2 apps (maybe)"
 
     install_packages \
+        featherpad \
+        geany \
+        kate \
+        qbittorrent \
+        ktorrent \
         cryfs \
-        encfs \
-        gocryptfs \
-        kdenetwork-filesharing \
-        lastpass
+        encfs
 }
 
 install_tier2
