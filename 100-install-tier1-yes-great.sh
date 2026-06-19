@@ -51,6 +51,8 @@ install_tier1() {
         kdenlive \
         obs-studio \
         claude-code \
+        sublime-text-4 \
+        visual-studio-code-bin \
         kcalc \
         filelight \
         mintstick \
