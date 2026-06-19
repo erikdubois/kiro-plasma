@@ -1,4 +1,17 @@
-# kiro-plasma
+<h1 align="center">
+  <img src="kiro.jpg" alt="Kiro" width="220" />
+  <br />
+  Kiro Plasma
+</h1>
+
+![Last-Commit](https://img.shields.io/github/last-commit/erikdubois/kiro-plasma?style=for-the-badge)
+
+<img alt="GitHub followers" src="https://img.shields.io/github/followers/erikdubois?style=flat">&nbsp;&nbsp;<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/erikdubois/kiro-plasma">&nbsp;&nbsp;<img alt="GitHub forks" src="https://img.shields.io/github/forks/erikdubois/kiro-plasma">
+
+<img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UCJdmdUp5BrsWsYVQUylCMLg">&nbsp;&nbsp;<img alt="YouTube Channel Views" src="https://img.shields.io/youtube/channel/views/UCJdmdUp5BrsWsYVQUylCMLg">
+
+
+# Kiro Plasma
 
 Extra-software scripts for a **minimal Kiro Plasma ISO** install. Modelled on
 [arcolinux-nemesis](https://github.com/erikdubois) but Plasma-only: it adds user
@@ -63,3 +76,10 @@ Each tier script can also be run standalone — they source `common/common.sh`
 themselves and skip cleanly if Plasma is not present.
 
 Set `DEBUG=true` to pause before each section.
+
+## Maintenance
+
+- `setup.sh` — configures the local git identity and points `origin` at the SSH
+  remote for this project.
+- `up.sh` — pulls, then commits and pushes the repo (runs `setup.sh` first if the
+  remote is not yet SSH).
