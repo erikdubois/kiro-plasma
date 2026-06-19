@@ -40,21 +40,35 @@ install_tier3() {
         xournalpp \
         libreoffice-fresh \
         onlyoffice-bin \
-        wps-office \
         pdfarranger \
         qpdfview \
         gscan2pdf \
         simple-scan \
+        isoimagewriter \
         shortwave \
-        variety \
         nomacs \
-        mintstick \
         hardinfo2 \
         system-config-printer \
         pacmanlogviewer \
         font-manager \
         gcolor3 \
-        resources
+        resources \
+        qalculate-qt \
+        kamoso \
+        neochat \
+        kweather \
+        kclock \
+        kcharselect \
+        kfind \
+        upscayl-bin \
+        kdiskmark \
+        pika-backup \
+        vorta \
+        timeshift \
+        skanpage \
+        kmag \
+        onboard \
+        orca
 }
 
 install_tier3

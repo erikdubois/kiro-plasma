@@ -35,8 +35,20 @@ install_tier2() {
         kate \
         qbittorrent \
         ktorrent \
+        wps-office \
+        variety \
         cryfs \
-        encfs
+        encfs \
+        keepassxc \
+        digikam \
+        elisa \
+        haruna \
+        kid3-qt \
+        krename \
+        krdc \
+        handbrake \
+        audacity \
+        k3b
 }
 
 install_tier2

@@ -47,7 +47,13 @@ install_tier1() {
         dolphin-plugins \
         gimp \
         inkscape \
+        krita \
+        kdenlive \
         obs-studio \
+        claude-code \
+        kcalc \
+        filelight \
+        mintstick \
         lastpass \
         insync \
         signal-in-tray \
