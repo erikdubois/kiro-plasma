@@ -42,6 +42,7 @@ install_tier1() {
         firefox \
         flameshot-git \
         gimp \
+        gittyup \
         gwenview \
         inkscape \
         insync \
