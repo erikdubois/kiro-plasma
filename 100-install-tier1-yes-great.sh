@@ -50,6 +50,7 @@ install_tier1() {
         kdenlive \
         krita \
         lastpass \
+        meld \
         mintstick \
         obs-studio \
         okular \
